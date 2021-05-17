@@ -19,8 +19,6 @@ https://github.com/JYL-LU/Webpage-Design-Portfolio
 
 ### laptop
 
-![website-homepage]laptop-1.jpg
-
 ## Contribution
 
 Made by Jingyi Jane Lu
