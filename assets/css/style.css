@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+/*the start of header*/
+header {
+  background-color: lightgray;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 a {
+  font-weight: bold;
+  color: rgb(115, 90, 158);
+  font-size: 30px;
+  margin: 0 40px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(129, 143, 184);
+}
+
+header nav ul li {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 90px;
+}
+
+header nav ul li a {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  background: darkgray;
+  color: black;
+  border-radius: 2px;
+  border-bottom: 2px solid black;
+}
+/*the end of header*/
+
+/*the beginning of hero*/
+.container {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+.hero {
+  background-image: url("../images/background-image3.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background-attachment: fixed;
+  background-position: 100%;
+  min-height: 30vh;
+  text-align: right;
+}
+
+.hero div {
+  flex: 0 0 90%;
+}
+
+.subtitle {
+  width: 90%;
+  color: rgb(129, 143, 184);
+  margin: 0;
+  display: inline;
+  background-color: lightgray;
+  font-size: 25px;
+}
+
+/*the end of hero*/
+
+/*the beginning of who i am*/
+
+.intro {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 0px 0px;
+  padding: 40px 0;
+}
+
+.about-me {
+  font-size: 30px;
+  color: rgb(129, 143, 184);
+  border-right: rgb(129, 143, 184) solid 4px;
+  width: 25%;
+  text-align: right;
+  padding: 100px 20px;
+}
+
+.intro div {
+  width: 72%;
+}
+
+.image {
+  flex: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px 20px;
+  display: inline-flex;
+}
+
+.intro h3 {
+  padding: 10px 40px;
+  font-size: 30px;
+  text-align: left;
+  color: rgb(129, 143, 184);
+}
+
+.intro p {
+  padding: 5px 40px;
+  color: rgb(129, 143, 184);
+  text-align: left;
+}
+
+/* the end of who i am*/
+/* the beginning of what i do*/
+
+.work {
+  background: lightgray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0;
+  padding: 40px 0;
+}
+.primary-work img {
+  margin: 5px 0;
+  border: 4px solid lightsteelblue;
+}
+
+.run-buddy img,
+.work-3 img,
+.work-4 img {
+  margin: 5px 0;
+  border: 4px solid lightsteelblue;
+}
+
+.work h3 {
+  background-color: rgb(70, 60, 177);
+}
+
+.work h2 {
+  font-size: 30px;
+  color: rgb(129, 143, 184);
+  border-right: rgb(129, 143, 184) solid 4px;
+  flex: 0 0 25%;
+  text-align: right;
+  padding: 150px 20px;
+}
+
+.work div {
+  color: rgb(129, 143, 184);
+}
+
+/*the beginning of contact*/
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: whitesmoke;
+  padding: 40px 0;
+}
+
+.contact h2 {
+  font-size: 30px;
+  color: rgb(129, 143, 184);
+  border-right: rgb(129, 143, 184) solid 4px;
+  width: 25%;
+  text-align: right;
+  padding: 50px 20px;
+}
+.contact div {
+  width: 75%;
+}
+.contact p,
+.contact a {
+  color: rgb(129, 143, 184);
+  font-size: 18px;
+  padding: 60px 40px;
+  display: inline-flex;
+  flex: row;
+  justify-content: space-around;
+}
+
+/*the end of "contact me"*/
+
+/*the beginning of footer*/
+footer {
+  background-color: lightgray;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(129, 143, 184);
+  height: 10vh;
+  padding: 25px 20px;
+}
+
+footer h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer a,F
+footer p {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(129, 143, 184);
+  display: flex-end;
+  align-items: flex-end;
+}
+
+footer span {
+  border-bottom: rgb(129, 143, 184) 2px solid;
+  font-weight: bold;
+}
+/*the end of footer*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* ipad */
+@media screen and (max-width: 768px) {
+  header{
+    justify-content: space-around;
+  }
+  
+  .hero {
+    min-height: 15vh;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  
+  .intro {
+    padding: 0;
+  }
+  
+  .about-me {
+      border-right: 0;
+      font-size: 25px;
+      text-align: center;
+      border-bottom: rgb(129, 143, 184) solid 4px;
+      width: 100%;
+      padding: 20px 0 10px 0;
+      margin-left: 20px;
+      margin-right:40px;
+    }
+  
+    .intro div {
+      width: 100%;
+    }
+  
+    .intro img {
+      align-items: center;
+      width:320px;
+      height:280px;
+      padding: 10px 0 10px 15px;
+    }
+  
+    .intro h3 {
+      text-align: left; 
+      font-size: 20px;
+      padding: 15px;
+    }
+  
+    .intro p {
+      padding: 5px 20px 10px 15px;
+      font-size: 15px;
+    }
+  
+    .work {
+      padding: 0;
+    }
+  
+    .work h2 {
+      border-right: 0;
+      font-size: 25px;
+      text-align: center;
+      border-bottom: rgb(129, 143, 184) solid 4px;
+      width: 100%;
+      padding: 20px 0 10px 0;
+      margin-left: 20px;
+      margin-right:40px;
+      flex:100%;
+    }
+  
+    .primary-work img {
+      margin: 10px 0;
+      width: 100%;
+      height: 500px;
+    }
+  
+    .run-buddy img {
+      margin: 10px 0;
+      width: 375px;
+      height: 200px;
+    }
+  
+    .work-3 img,.work-4 img {
+      margin:10px 0;
+      width: 187.5px;
+      height: 200px;
+      margin: 10px 0;
+    }
+  
+    .contact {
+      padding: 0;
+    }
+  
+    .contact h2 {
+      border-right: 0;
+      font-size: 25px;
+      text-align: center;
+      border-bottom: rgb(129, 143, 184) solid 4px;
+      width: 100%;
+      padding: 20px 0 10px 0;
+      margin-left: 20px;
+      margin-right:20px;
+    }
+  
+    .contact div {
+      width: 100%;
+    }
+    .contact p, .contact a{
+      padding: 10px 10px 10px 40px;
+    }
+  
+    footer {
+      padding: 0;
+      display:list-item;
+    }
+  
+    footer h2 {
+    margin: 0;
+    padding: 15px 15px;
+    width: 100%;
+    font-size: 25px;
+    }
+  
+    footer a, footer p {
+      margin: 0 10px;
+      width:100%;
+      padding: 0px 5px;
+      font-size:20px;
+    }
+
+  /* iphoneX */
+  @media screen and (max-width: 575px) {
+header{
+  justify-content: space-around;
+}
+
+.hero {
+  min-height: 15vh;
+}
+.subtitle {
+  font-size: 15px;
+}
+
+.intro {
+  padding: 0;
+}
+
+.about-me {
+    border-right: 0;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: rgb(129, 143, 184) solid 4px;
+    width: 100%;
+    padding: 20px 0 10px 0;
+    margin-left: 20px;
+    margin-right:20px;
+  }
+
+  .intro div {
+    width: 100%;
+  }
+
+  .intro img {
+    align-items: center;
+    width:320px;
+    height:280px;
+    padding: 10px 0 10px 15px;
+  }
+
+  .intro h3 {
+    text-align: center; 
+    font-size: 20px;
+  }
+
+  .intro p {
+    padding: 5px 20px 10px 20px;
+    font-size: 15px;
+  }
+
+  .work {
+    padding: 0;
+  }
+
+  .work h2 {
+    border-right: 0;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: rgb(129, 143, 184) solid 4px;
+    width: 100%;
+    padding: 20px 0 10px 0;
+    margin-left: 20px;
+    margin-right:20px;
+    flex:100%;
+  }
+
+  .primary-work img {
+    margin: 10px 0;
+    width: 375px;
+    height: 350px;
+  }
+
+  .run-buddy img {
+    margin: 10px 0;
+    width: 375px;
+    height: 200px;
+  }
+
+  .work-3 img,.work-4 img {
+    margin:10px 0;
+    width: 187.5px;
+    height: 150px;
+    margin: 10px 0;
+  }
+
+  .contact {
+    padding: 0;
+  }
+
+  .contact h2 {
+    border-right: 0;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: rgb(129, 143, 184) solid 4px;
+    width: 100%;
+    padding: 20px 0 10px 0;
+    margin-left: 20px;
+    margin-right:20px;
+  }
+
+  .contact div {
+    width: 100%;
+  }
+  .contact p, .contact a{
+    padding: 10px 10px 10px 40px;
+  }
+
+  footer {
+    padding: 0;
+    display:list-item;
+  }
+
+  footer h2 {
+    margin: 0;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  footer a, footer p {
+    margin: 0 10px;
+    width:100%;
+    padding: 0px 5px;
+    font-size:15px;
+  }
+  }
